@@ -1,0 +1,18 @@
+{
+  "name": "quick-start",
+  "productName": "quick-start",
+  "version": "1.0.0",
+  "description": "Execute a set of presets to quickly configure your newly installed system",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "QuickStart Maintainers",
+    "email": "quickstart.app.2020@gmail.com",
+    "url": "https://quickstart.io"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

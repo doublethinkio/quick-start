@@ -1,0 +1,44 @@
+// https://www.electron.build/configuration/configuration#configuration
+{
+  "productName": "QuickStart",
+  "appId": "org.develar.QuickStart",
+  "files": [
+    "dist/",
+    "node_modules/",
+    "app.html",
+    "main.prod.js",
+    "main.prod.js.map",
+    "package.json"
+  ],
+  "dmg": {
+    "contents": [
+      {
+        "x": 130,
+        "y": 220
+      },
+      {
+        "x": 410,
+        "y": 220,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "win": {
+    "target": ["nsis", "msi"]
+  },
+  "linux": {
+    "target": ["deb", "rpm", "AppImage"],
+    "category": "Development"
+  },
+  "directories": {
+    "buildResources": "resources",
+    "output": "release"
+  },
+  "publish": {
+    "provider": "github",
+    "owner": "doublethinkio",
+    "repo": "quick-start",
+    "private": false
+  }
+}
