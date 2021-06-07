@@ -2634,6 +2634,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@mdn/browser-compat-data@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@mdn/browser-compat-data/-/browser-compat-data-2.0.7.tgz#72ec37b9c1e00ce0b4e0309d753be18e2da12ee3"
+  integrity sha512-GeeM827DlzFFidn1eKkMBiqXFD2oLsnZbaiGhByPl0vcapsRzUL+t9hDoov1swc9rB2jw64R+ihtzC8qOE9wXw==
+  dependencies:
+    extend "3.0.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -5625,11 +5632,6 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@^1.0.30001090:
-  version "1.0.30001109"
-  resolved "https://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30001109.tgz?cache=0&sync_timestamp=1596087023420&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-db%2Fdownload%2Fcaniuse-db-1.0.30001109.tgz#756c5d689ce550c891e1456cf4c6b8f7a253ec19"
-  integrity sha1-dWxdaJzlUMiR4UVs9Ma496JT7Bk=
-
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001109:
   version "1.0.30001109"
   resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001109.tgz?cache=0&sync_timestamp=1596085594632&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001109.tgz#a9f3f26a0c3753b063d7acbb48dfb9c0e46f2b19"
@@ -5639,6 +5641,11 @@ caniuse-lite@^1.0.30001154:
   version "1.0.30001154"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001154.tgz#f3bbc245ce55e4c1cd20fa731b097880181a7f17"
   integrity sha512-y9DvdSti8NnYB9Be92ddMZQrcOe04kcQtcxtBx4NkB04+qZ+JUWotnXBJTmxlKudhxNTQ3RRknMwNU2YQl/Org==
+
+caniuse-lite@^1.0.30001166:
+  version "1.0.30001235"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001235.tgz#ad5ca75bc5a1f7b12df79ad806d715a43a5ac4ed"
+  integrity sha512-zWEwIVqnzPkSAXOUlQnPW2oKoYb2aLQ4Q5ejdjBcnH63rfypaW34CxaeBn1VMya2XaEU3P/R2qHpWyj+l0BT1A==
 
 caniuse-lite@^1.0.30001219:
   version "1.0.30001230"
@@ -7802,18 +7809,18 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-compat@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-compat/download/eslint-plugin-compat-3.8.0.tgz?cache=0&sync_timestamp=1593312069345&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-compat%2Fdownload%2Feslint-plugin-compat-3.8.0.tgz#2348d6105e7e87b823ae3b97b349512a2a45a7f2"
-  integrity sha1-I0jWEF5+h7gjrjuXs0lRKipFp/I=
+eslint-plugin-compat@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-compat/-/eslint-plugin-compat-3.9.0.tgz#a7a224e09b102b58e7f7dff52c936428ff3e0186"
+  integrity sha512-lt3l5PHFHVEYSZ5zijcoYvtQJPsBifRiH5N0Et57KwVu7l/yxmHhSG6VJiLMa/lXrg93Qu8049RNQOMn0+yJBg==
   dependencies:
+    "@mdn/browser-compat-data" "^2.0.7"
     ast-metadata-inferer "^0.4.0"
     browserslist "^4.12.2"
-    caniuse-db "^1.0.30001090"
+    caniuse-lite "^1.0.30001166"
     core-js "^3.6.5"
     find-up "^4.1.0"
     lodash.memoize "4.1.2"
-    mdn-browser-compat-data "^1.0.28"
     semver "7.3.2"
 
 eslint-plugin-import@^2.22.0:
@@ -11296,13 +11303,6 @@ mdast-util-compact@^2.0.0:
   integrity sha1-yrxpovQxA2KDJvNbGs9zXVXJlJA=
   dependencies:
     unist-util-visit "^2.0.0"
-
-mdn-browser-compat-data@^1.0.28:
-  version "1.0.33"
-  resolved "https://registry.npm.taobao.org/mdn-browser-compat-data/download/mdn-browser-compat-data-1.0.33.tgz?cache=0&sync_timestamp=1596124119204&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmdn-browser-compat-data%2Fdownload%2Fmdn-browser-compat-data-1.0.33.tgz#45f6796483c8f2f972cadf2acf9ec098ea86f33e"
-  integrity sha1-RfZ5ZIPI8vlyyt8qz57AmOqG8z4=
-  dependencies:
-    extend "3.0.2"
 
 mdn-data@2.0.4:
   version "2.0.4"
